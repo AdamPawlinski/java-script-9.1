@@ -1,11 +1,10 @@
 
 function getTriangleArea(a, h) {
-  if (a === 0) {
+  if (a > 0 && h > 0) {
+    return a * h / 2;
+  } else {
     console.log("Wrong data");
-  } else if (h === 0) {
-    console.log("Wrong data");
-  }  ;
-  return a * h / 2;
+  };
 };
 console.log(getTriangleArea(10, 15));
 alert("The area of triangle with sides 10 and 15 is: " + getTriangleArea(10, 15));
